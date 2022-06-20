@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffff;
+}
+
+.flex-container {
+    display: flexbox;
+    width: 500px;
+    height: 500px;
+    border: 2px solid burlywood;
+    flex-direction: column;
+    background-color: rgb(177, 225, 255);
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.flex-container .principal p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+#list {
+    display: flex;
+}
+
+#task-input {
+    height: 20px;
+    width: 300px;
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+#list button {
+    width: 100px;
+    border-radius: 10%;
+    background-color: rgb(83, 83, 199);
+    color: white;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  :checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
